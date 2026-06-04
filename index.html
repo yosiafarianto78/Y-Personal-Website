@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yosia | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="index.js" defer></script>
+<link rel="icon" type="image/png" href="img/profile/favicon.png">
+<link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+<canvas id="noise"></canvas>
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<div id="preloader">
+  <div><div id="preloader-text"><span id="preloader-typed"></span><span id="preloader-cursor"></span></div></div>
+  <div id="preloader-bar-wrap"><div id="preloader-bar"></div></div>
+  <div id="preloader-pct">000%</div>
+</div>
+
+<nav id="nav">
+  <a href="#home" class="nav-logo">
+    <img src="img/profile/favicon.png" alt="YHF">
+    <span>Yosia Herson Farianto</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#home" data-section="0">Home</a></li>
+    <li><a href="#ledger" data-section="1">Ledger</a></li>
+    <li><a href="#proof" data-section="2">Proof</a></li>
+    <li><a href="#kinetic" data-section="4">Kinetic</a></li>
+  </ul>
+</nav>
+<div id="section-counter">01 / 05</div>
+
+<!-- HOME -->
+<section id="home">
+  <div class="dot-grid"></div>
+  <div class="home-container">
+    <div class="home-left">
+      <div class="home-tag reveal">AI & Automation Enthusiast</div>
+      <h1 class="home-quote reveal">It is not enough to do your <em>best</em> — you must <em>know</em> what to do, and then do your <em>best</em></h1>
+      <p class="home-quote-attr reveal">— W. Edwards Deming</p>
+      <div class="home-bio reveal">
+        <p>I'm <strong>Yosia</strong>. Born and raised in <em>West Kalimantan</em>, I built my academic foundation in Computer Science. As an engineer, my daily world revolves around system architecture — extracting efficiency through <strong>Process Automation</strong> and deploying <strong>Artificial Intelligence</strong> models to solve real-world complexities.</p>
+        <p style="margin-top:12px;">In between strict logic and lines of code, I sustain my momentum through high-energy physical outlets — whether on the badminton court or the running track. For me, a high-performance system always requires a balanced counterweight.</p>
+      </div>
+      <div class="social-grid reveal">
+        <a href="https://linkedin.com/in/yosiahf" class="social-btn" target="_blank"><span>↗ LinkedIn</span></a>
+        <a href="mailto:yosiafarianto7@gmail.com" class="social-btn"><span>✉ Gmail</span></a>
+        <a href="https://wa.me/6277783157857?text=Hi%20Yosia,%20I%20came%20from%20your%20portfolio." class="social-btn" target="_blank"><span>↗ WhatsApp</span></a>
+      </div>
+    </div>
+    <div class="home-right reveal">
+      <div class="photo-frame">
+        <img src="./img/profile/profile.jpg" alt="Yosia Herson Farianto" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
+        <div class="photo-frame-corner tl"></div>
+        <div class="photo-frame-corner tr"></div>
+        <div class="photo-frame-corner bl"></div>
+        <div class="photo-frame-corner br"></div>
+      </div>
+    </div>
+  </div>
+  <div class="marquee-outer">
+  <div class="marquee-wrap reveal">
+    <div class="marquee-track">
+      <span class="marquee-item highlight">Python</span>
+      <span class="marquee-item highlight">Power Automate</span>
+      <span class="marquee-item highlight">Javascript</span>
+      <span class="marquee-item highlight">Azure</span>
+      <span class="marquee-item highlight">VBA</span>
+      <span class="marquee-item highlight">Ollama</span>
+      <span class="marquee-item highlight">SQL Server</span>
+      <span class="marquee-item highlight">Power Apps</span>
+      <span class="marquee-item highlight">Python</span>
+      <span class="marquee-item highlight">Power Automate</span>
+      <span class="marquee-item highlight">Azure</span>
+      <span class="marquee-item highlight">VBA</span>
+      <span class="marquee-item highlight">Ollama</span>
+      <span class="marquee-item highlight">OpenClaw</span>
+      <span class="marquee-item highlight">n8n</span>
+      <span class="marquee-item highlight">SQL Server</span>
+      <span class="marquee-item highlight">Power Apps</span>
+    </div>
+  </div>
+  <div class="marquee-wrap" style="border-top:none;">
+    <div class="marquee-track reverse">
+      <span class="marquee-item">Badminton</span>
+      <span class="marquee-item">Table Tennis</span>
+      <span class="marquee-item">Volleyball</span>
+      <span class="marquee-item">Running</span>
+      <span class="marquee-item">Padel</span>
+      <span class="marquee-item">Futsal</span>
+      <span class="marquee-item">Gaming</span>
+      <span class="marquee-item">Badminton</span>
+      <span class="marquee-item">Table Tennis</span>
+      <span class="marquee-item">Volleyball</span>
+      <span class="marquee-item">Running</span>
+      <span class="marquee-item">Padel</span>
+      <span class="marquee-item">Futsal</span>
+      <span class="marquee-item">Gaming</span>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- LEDGER -->
+<section id="ledger">
+  <div class="dot-grid"></div>
+  <div class="ledger-inner">
+    <div class="section-eyebrow reveal">02 — Career & Education</div>
+    <h2 class="ledger-title reveal">The <em style="font-style:normal;color:var(--cyan);">Ledger</em></h2>
+    <div class="ledger-block-label reveal">Education</div>
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <div class="edu-period">2015 — 2019</div>
+        <div class="edu-title">Natural Science</div>
+        <div class="edu-sub">SMAN 01 Jawai</div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-period">2019 — 2023</div>
+        <div class="edu-title">Computer Science</div>
+        <div class="edu-sub">Calvin Institute of Technology</div>
+      </div>
+    </div>
+    
+    <div class="ledger-block-label career-label reveal">Career</div>
+    <div class="timeline-wrap" id="timeline">
+      <div class="timeline-node reveal">
+        <div class="node-empty"></div>
+        <div class="node-dot"><div class="node-dot-inner"></div></div>
+        <div class="node-content">
+          <div class="node-period">2020 — 2021</div>
+          <div class="node-title">Dining Hall Staff</div>
+          <div class="node-sub">Calvin Institute of Technology</div>
+          <div class="node-desc">Assisted chefs in food preparation and supported end-to-end kitchen operations.</div>
+          <div class="node-tags"><span class="node-tag">first job</span><span class="node-tag">work ethic</span></div>
+        </div>
+      </div>
+      <div class="timeline-node reveal">
+        <div class="node-empty"></div>
+        <div class="node-dot"><div class="node-dot-inner"></div></div>
+        <div class="node-content">
+          <div class="node-period">2023 — 2025</div>
+          <div class="node-title">RPA Developer</div>
+          <div class="node-sub">BCA Life · Operational Excellence</div>
+          <div class="node-desc">Designed and deployed end-to-end automation for manual processes across Operations and Finance, reducing processing time by up to 85%.</div>
+          <div class="node-tags"><span class="node-tag">VBA</span><span class="node-tag">Power Automate</span><span class="node-tag">Python</span><span class="node-tag">Excel</span></div>
+        </div>
+      </div>
+      <div class="timeline-node reveal">
+        <div class="node-dot"><div class="node-dot-inner"></div></div>
+        <div class="node-content" style="text-align:right;">
+          <div class="node-period">2025 — 2026</div>
+          <div class="node-title">Business Process Reengineering</div>
+          <div class="node-sub">BCA Life · Operational Excellence</div>
+          <div class="node-desc">Identified and eliminated bottlenecks across business processes, evaluating workflows and recommending automation strategies at scale.</div>
+          <div class="node-tags" style="justify-content:flex-end;"><span class="node-tag">Power BI</span><span class="node-tag">Power Automate</span><span class="node-tag">Lucidchart</span><span class="node-tag">Six Sigma</span></div>
+        </div>
+       
+        <div class="node-empty"></div>
+      </div>
+      <div class="timeline-node reveal">
+        <div class="node-empty"></div>
+        <div class="node-dot"><div class="node-dot-inner active"></div></div>
+        <div class="node-content">
+          <div class="node-period">2026 — Present</div>
+          <div class="node-title">AI & Automation</div>
+          <div class="node-sub" style="color:var(--emerald);">BCA Life · Digital Transformation</div>
+          <div class="node-desc">Building internal RAG knowledge bases, ML-powered fraud detection, and local on-premise pipelines for OCR and voice-to-text engines.</div>
+          <div class="node-tags"><span class="node-tag">Azure</span><span class="node-tag">Qwen</span><span class="node-tag">Whisper</span><span class="node-tag">RAG</span><span class="node-tag">Python</span><span class="node-tag">Power Apps</span><span class="node-tag">JavaScript</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ledger-block-label reveal">Recognition</div>
+    <div class="achievements-grid" style="margin-bottom:64px;">
+      <div class="achievement-chip reveal"><span class="achievement-medal medal-silver">Silver</span><div class="achievement-text"><strong>BCA Innovation Convention 2025</strong>Fraudbusters.</div></div>
+      <div class="achievement-chip reveal"><span class="achievement-medal medal-gold">Gold&nbsp;&nbsp;</span><div class="achievement-text"><strong>BCA Life Kaizen Competition 2025</strong>Fraudbusters.</div></div>
+      <div class="achievement-chip reveal"><span class="achievement-medal medal-silver">Silver</span><div class="achievement-text"><strong>BCA Life Kaizen Competition 2024</strong>Si Paling AI.</div></div>
+      <div class="achievement-chip reveal"><span class="achievement-medal medal-bronze">Bronze</span><div class="achievement-text"><strong>AAJI Badminton Inter-Company 2025</strong>BCA Life Badminton Team.</div></div>
+    </div>
+
+    
+</section>
+
+<!-- PROOF -->
+ <section id="proof">
+  <div class="dot-grid"></div>
+  <div class="proof-header">
+    <div>
+      <div class="section-eyebrow reveal">03 — Selected Work</div>
+      <h2 class="proof-title reveal">Proof of <em style="font-style:normal;color:var(--cyan);">Concept</em></h2>
+    </div>
+    <div class="proof-count reveal">05 Favorite Projects</div>
+  </div>
+  <div class="bento-grid" id="bento-grid">
+
+    <!-- P1: Voice-to-Text -->
+    <div class="bento-card col-7 reveal" data-project="0">
+      <div class="card-num">01</div>
+      <div class="card-category cat-secure">[AI-Speech]</div>
+      <div class="card-title-text">On-Premise Voice-to-Text Engine</div>
+      <div class="card-stack">Whisper OpenAI · Qwen · Ollama · Python</div>
+      <div class="card-desc-text">Local inference pipeline for sensitive audio. Transcribed via Whisper, summarized by local Qwen LLM — zero cloud dependencies.</div>
+      <div class="card-visual" style="margin-top:16px;">
+        <div class="card-visual-waveform" id="waveform"></div>
+      </div>
+      <button class="card-cta">Expand<span class="card-cta-arrow"></span></button>
+    </div>
+
+    <!-- P2: Fraud Detection -->
+    <div class="bento-card col-5 reveal" data-project="1">
+      <div class="card-num">02</div>
+      <div class="card-category cat-ml">[AI-ML]</div>
+      <div class="card-title-text">Fraud Detection</div>
+      <div class="card-stack">Python · XGBoost · Autoencoder · Flask</div>
+      <div class="card-desc-text">XGBoost and Autoencoder for anomaly detection, wrapped in a Flask API.</div>
+      <div class="card-visual" style="margin-top:16px;padding:0 12px;">
+        <svg id="fraud-chart" width="100%" height="64" viewBox="0 0 200 64" preserveAspectRatio="none"></svg>
+      </div>
+      <button class="card-cta">Expand<span class="card-cta-arrow"></span></button>
+    </div>
+
+    <!-- P3: OCR Engine -->
+    <div class="bento-card col-5 reveal" data-project="2">
+      <div class="card-num">03</div>
+      <div class="card-category cat-secure">[AI-Vision]</div>
+      <div class="card-title-text">On-Premise OCR Engine</div>
+      <div class="card-stack">Google AI · Ollama · Qwen · Python · Power Apps</div>
+      <div class="card-desc-text">Hybrid doc intelligence — local vision models for OCR. Zero external leakage.</div>
+      <div class="card-visual" style="margin-top:16px;position:relative;overflow:hidden;">
+        <div class="ocr-doc">
+          <div class="ocr-line" style="width:85%"></div>
+          <div class="ocr-line" style="width:60%"></div>
+          <div class="ocr-line" style="width:75%"></div>
+          <div class="ocr-line" style="width:45%"></div>
+        </div>
+        <div class="ocr-scan"></div>
+      </div>
+      <button class="card-cta">Expand<span class="card-cta-arrow"></span></button>
+    </div>
+
+    <!-- P4: RAG Knowledge Base -->
+    <div class="bento-card col-7 reveal" data-project="3">
+      <div class="card-num">04</div>
+      <div class="card-category cat-secure">[AI-GenAI]</div>
+      <div class="card-title-text">RAG Knowledge Base</div>
+      <div class="card-stack">Azure · Python · Power Apps</div>
+      <div class="card-desc-text">On-premise knowledge retrieval with Azure. Ask anything — answered from internal docs.</div>
+      <div class="card-visual" style="margin-top:16px;">
+        <div class="rag-visual" id="rag-visual"></div>
+      </div>
+      <button class="card-cta">Expand<span class="card-cta-arrow"></span></button>
+    </div>
+
+    <!-- P4: Blaugrana -->
+    <div class="bento-card col-7 reveal" data-project="4">
+      <div class="card-num">04</div>
+      <div class="card-category cat-ml">[Data-Visualization]</div>
+      <div class="card-title-text">Blaugrana Analytics Dashboard</div>
+      <div class="card-stack">self-project · Python · Streamlit · Web Scraping</div>
+      <div class="card-desc-text">"In a way I'm probably immortal." — Johan Cruyff. Tactical football data scraped, normalized, and visualized interactively.</div>
+      <div class="card-visual" style="margin-top:16px;padding:8px 16px;justify-content:space-between;align-items:flex-end;gap:6px;">
+        <div class="barca-bars" id="barca-bars"></div>
+      </div>
+      <button class="card-cta">Expand<span class="card-cta-arrow"></span></button>
+    </div>
+
+    <!-- P5: Enterprise RPA -->
+    <div class="bento-card col-5 reveal" data-project="5">
+      <div class="card-num">05</div>
+      <div class="card-category cat-rpa">[Automation]</div>
+      <div class="card-title-text">Cross-Platform Enterprise Automation</div>
+      <div class="card-stack">Power Automate Desktop · Power Automate Cloud</div>
+      <div class="card-desc-text">End-to-end automation ecosystem — attended & unattended flows across SQL, email, teams, and various data processing.</div>
+      <div class="card-visual" style="margin-top:16px;height:72px;">
+        <div class="rpa-flow" id="rpa-flow"></div>
+      </div>
+      <button class="card-cta">Expand<span class="card-cta-arrow"></span></button>
+    </div>
+  </div>
+</section>
+
+<div id="card-overlay"></div>
+<div id="card-expanded">
+  <button id="card-close">← Close<span style="width:20px;height:1px;background:currentColor;display:inline-block;margin-left:8px;"></span></button>
+  <div class="expanded-inner" id="expanded-inner"></div>
+</div>
+
+<!-- ARSENAL -->
+<section id="arsenal">
+  <div class="dot-grid"></div>
+  <div class="arsenal-header">
+    <div><div class="section-eyebrow reveal">04 — Daily Stack</div></div>
+    <div class="arsenal-subtitle reveal">Tools I reach for daily — each one earns its place.</div>
+  </div>
+  <div class="arsenal-grid" id="arsenal-grid">
+    <div class="arsenal-card reveal" style="--ai-color:#D97706;">
+      <div class="arsenal-icon">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Claude-ai-icon.svg" alt="Claude Logo" style="width:100%; height:100%; object-fit:contain;">
+      </div>
+      <div class="arsenal-info">
+        <div class="arsenal-name">Claude</div>
+        <div class="arsenal-maker">Anthropic</div>
+        <div class="arsenal-tags"><span class="arsenal-tag">Reasoning</span><span class="arsenal-tag">Code</span></div>
+      </div>
+      <div class="arsenal-freq"><div class="arsenal-freq-bar"><div class="arsenal-freq-fill" data-width="95"></div></div><span class="arsenal-freq-label">95%</span></div>
+    </div>
+
+    <div class="arsenal-card reveal" style="--ai-color:#4285F4;">
+      <div class="arsenal-icon">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Google-gemini-icon.svg/960px-Google-gemini-icon.svg.png" alt="Gemini Logo" style="width:100%; height:100%; object-fit:contain;">
+      </div>
+      <div class="arsenal-info">
+        <div class="arsenal-name">Gemini</div>
+        <div class="arsenal-maker">Google</div>
+        <div class="arsenal-tags"><span class="arsenal-tag">Reasoning</span><span class="arsenal-tag">Code</span><span class="arsenal-tag">Image gen</span></div>
+      </div>
+      <div class="arsenal-freq"><div class="arsenal-freq-bar"><div class="arsenal-freq-fill" data-width="75"></div></div><span class="arsenal-freq-label">75%</span></div>
+    </div>
+
+    <div class="arsenal-card reveal" style="--ai-color:#20B2AA;">
+      <div class="arsenal-icon">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Perplexity_AI_Turquoise_on_White.png/960px-Perplexity_AI_Turquoise_on_White.png" alt="Perplexity Logo" style="width:100%; height:100%; object-fit:contain;">
+      </div>
+      <div class="arsenal-info">
+        <div class="arsenal-name">Perplexity</div>
+        <div class="arsenal-maker">Perplexity AI</div>
+        <div class="arsenal-tags"><span class="arsenal-tag">Research</span></div>
+      </div>
+      <div class="arsenal-freq"><div class="arsenal-freq-bar"><div class="arsenal-freq-fill" data-width="80"></div></div><span class="arsenal-freq-label">80%</span></div>
+    </div>
+
+    <div class="arsenal-card reveal" style="--ai-color:#10A37F;">
+      <div class="arsenal-icon">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT Logo" style="width:100%; height:100%; object-fit:contain;">
+      </div>
+      <div class="arsenal-info">
+        <div class="arsenal-name">ChatGPT</div>
+        <div class="arsenal-maker">OpenAI</div>
+        <div class="arsenal-tags"><span class="arsenal-tag">Code</span><span class="arsenal-tag">Reasoning</span></div>
+      </div>
+      <div class="arsenal-freq"><div class="arsenal-freq-bar"><div class="arsenal-freq-fill" data-width="70"></div></div><span class="arsenal-freq-label">70%</span></div>
+    </div>
+
+    <div class="arsenal-card reveal" style="--ai-color:#3B82F6;">
+      <div class="arsenal-icon">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/M365_Copilot.png/960px-M365_Copilot.png" alt="Copilot Logo" style="width:100%; height:100%; object-fit:contain;">
+      </div>
+      <div class="arsenal-info">
+        <div class="arsenal-name">Copilot</div>
+        <div class="arsenal-maker">Microsoft</div>
+        <div class="arsenal-tags"><span class="arsenal-tag">Office</span><span class="arsenal-tag">Code</span><span class="arsenal-tag">Creative</span></div>
+      </div>
+      <div class="arsenal-freq"><div class="arsenal-freq-bar"><div class="arsenal-freq-fill" data-width="60"></div></div><span class="arsenal-freq-label">60%</span></div>
+    </div>
+
+    <div class="arsenal-card reveal" style="--ai-color:#2853fe;">
+      <div class="arsenal-icon">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Deepseek-logo-icon.png" alt="DeepSeek Logo" style="width:100%; height:100%; object-fit:contain;">
+      </div>
+      <div class="arsenal-info">
+        <div class="arsenal-name">DeepSeek</div>
+        <div class="arsenal-maker">DeepSeek AI</div>
+        <div class="arsenal-tags"><span class="arsenal-tag">Code</span><span class="arsenal-tag">Reasoning</span></div>
+      </div>
+      <div class="arsenal-freq"><div class="arsenal-freq-bar"><div class="arsenal-freq-fill" data-width="50"></div></div><span class="arsenal-freq-label">50%</span></div>
+    </div>
+
+    <div class="arsenal-card reveal" style="--ai-color:#A855F7;">
+      <div class="arsenal-icon">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Qwen_logo.svg/250px-Qwen_logo.svg.png?_=20250327025131" alt="QWen Logo" style="width:100%; height:100%; object-fit:contain;">
+      </div>
+      <div class="arsenal-info">
+        <div class="arsenal-name">Qwen</div>
+        <div class="arsenal-maker">Alibaba Cloud</div>
+        <div class="arsenal-tags"><span class="arsenal-tag">Reasoning</span></div>
+      </div>
+      <div class="arsenal-freq"><div class="arsenal-freq-bar"><div class="arsenal-freq-fill" data-width="50"></div></div><span class="arsenal-freq-label">60%</span></div>
+    </div>
+</div>
+</section>
+
+<!-- KINETIC -->
+<section id="kinetic">
+  <div class="dot-grid"></div>
+  <div class="section-eyebrow reveal">05 — Beyond the Terminal</div>
+  <h2 class="kinetic-title reveal">Kinetic & Acoustic <em style="font-style:normal;color:var(--cyan);">Outlets</em></h2>
+
+  <div class="mosaic-wrap reveal" id="mosaic">
+
+    <!-- SLICE: On the Court -->
+    <div class="mosaic-slice" data-category="sport">
+      <div class="mosaic-bg">
+        <img class="mosaic-main-img" src="./img/kinetic/1_sport.jpg" alt="On the Court"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="mosaic-placeholder" style="background:linear-gradient(160deg,#0f1a14,#0a0a0a);display:none;">
+          <span class="mosaic-num">MOMENT · 01</span>
+        </div>
+      </div>
+      <div class="mosaic-preview">
+        <div class="mosaic-preview-label">On the Court</div>
+        <div class="mosaic-preview-sub" style="color:var(--amber);">Reflex · Velocity · Performance</div>
+        <div class="mosaic-preview-thumbs" id="preview-sport"></div>
+      </div>
+    </div>
+
+    <!-- SLICE: On the Office -->
+    <div class="mosaic-slice" data-category="office">
+      <div class="mosaic-bg">
+        <img class="mosaic-main-img" src="./img/kinetic/1_office.jpg" alt="On the Office"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="mosaic-placeholder" style="background:linear-gradient(160deg,#1a1500,#0a0a0a);display:none;">
+          <span class="mosaic-num">MOMENT · 02</span>
+        </div>
+      </div>
+      <div class="mosaic-preview">
+        <div class="mosaic-preview-label">On the Office</div>
+        <div class="mosaic-preview-sub" style="color:var(--amber);"> Synergy · Culture · Alignment</div>
+        <div class="mosaic-preview-thumbs" id="preview-office"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <button id="lb-close">← Close<span style="width:20px;height:1px;background:currentColor;display:inline-block;margin-left:8px;"></span></button>
+  <div class="lb-inner">
+    <div class="lb-main" id="lb-main">
+      <img id="lb-img" src="" alt="" style="display:none;">
+      <div class="lb-main-placeholder" id="lb-placeholder">
+        <span id="lb-placeholder-text">[ PHOTO ]</span>
+      </div>
+    </div>
+    <button class="lb-nav prev" id="lb-prev">‹</button>
+    <button class="lb-nav next" id="lb-next">›</button>
+    <div class="lb-bottom">
+      <div class="lb-meta-title" id="lb-title"></div>
+      <div class="lb-counter" id="lb-counter"></div>
+    </div>
+    <div class="lb-thumbs" id="lb-thumbs"></div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-name">YOSIA HERSON FARIANTO · 2026</span>
+  <span class="footer-copy">Engineered with precision. Deployed with intent.</span>
+</footer>
+
+</body>
+</html>
