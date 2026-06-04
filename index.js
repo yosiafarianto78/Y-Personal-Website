@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 // ── PRELOADER ──
 (function(){
-  const text='Welcome, thanks for comming!',typed=document.getElementById('preloader-typed'),bar=document.getElementById('preloader-bar'),pct=document.getElementById('preloader-pct'),loader=document.getElementById('preloader');
+  const text='Welcome, thank you for coming!',typed=document.getElementById('preloader-typed'),bar=document.getElementById('preloader-bar'),pct=document.getElementById('preloader-pct'),loader=document.getElementById('preloader');
   let i=0,p=0;
   if(sessionStorage.getItem('loaded')){loader.style.display='none';return;}
   const ti=setInterval(()=>{if(i<text.length){typed.textContent+=text[i++];}else clearInterval(ti);},60);
