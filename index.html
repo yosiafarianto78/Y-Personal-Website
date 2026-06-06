@@ -16,6 +16,16 @@
 </head>
 <body>
 
+<div id="mobile-modal">
+  <div id="mobile-modal-box">
+    <div id="mobile-modal-icon">⌘</div>
+    <div id="mobile-modal-title">Better on Desktop</div>
+    <div id="mobile-modal-desc"><div id="mobile-modal-desc">This portfolio is designed for desktop — featuring custom interactions, layered animations, and precision layouts. For the optimal experience, viewing on a desktop is recommended.</div></div>
+
+    <button id="mobile-modal-dismiss">Continue Anyway →</button>
+  </div>
+</div>
+
 <canvas id="noise"></canvas>
 <div id="cursor-dot"></div>
 <div id="cursor-ring"></div>
@@ -37,7 +47,20 @@
     <li><a href="#proof" data-section="2">Proof</a></li>
     <li><a href="#kinetic" data-section="4">Kinetic</a></li>
   </ul>
+
+  <button id="nav-hamburger" aria-label="Menu">
+  <span></span><span></span><span></span>
+</button>
+
 </nav>
+
+<div id="nav-mobile-menu">
+  <a href="#home" data-section="0">Home</a>
+  <a href="#ledger" data-section="1">Ledger</a>
+  <a href="#proof" data-section="2">Proof</a>
+  <a href="#kinetic" data-section="4">Kinetic</a>
+</div>
+
 <div id="section-counter">01 / 05</div>
 
 <!-- HOME -->
@@ -55,7 +78,7 @@
       <div class="social-grid reveal">
         <a href="https://linkedin.com/in/yosiahf" class="social-btn" target="_blank"><span>↗ LinkedIn</span></a>
         <a href="mailto:yosiafarianto7@gmail.com" class="social-btn"><span>✉ Gmail</span></a>
-        <a href="https://wa.me/6277783157857?text=Hi%20Yosia,%20I%20came%20from%20your%20portfolio." class="social-btn" target="_blank"><span>↗ WhatsApp</span></a>
+        <a href="https://wa.me/627778315785?text=Hi%20Yosia,%20I%20came%20from%20your%20portfolio." class="social-btn" target="_blank"><span>↗ WhatsApp</span></a>
       </div>
     </div>
     <div class="home-right reveal">
@@ -269,7 +292,7 @@
       <div class="card-category cat-ml">[Data-Visualization]</div>
       <div class="card-title-text">Blaugrana Analytics Dashboard</div>
       <div class="card-stack">self-project · Python · Streamlit · Web Scraping</div>
-      <div class="card-desc-text">"In a way I'm probably immortal." — Johan Cruyff. Tactical football data scraped, normalized, and visualized interactively.</div>
+      <div class="card-desc-text">"In a way I'm probably immortal." — Johan Cruyff.</div>
       <div class="card-visual" style="margin-top:16px;padding:8px 16px;justify-content:space-between;align-items:flex-end;gap:6px;">
         <div class="barca-bars" id="barca-bars"></div>
       </div>
@@ -329,7 +352,7 @@
       <div class="arsenal-freq"><div class="arsenal-freq-bar"><div class="arsenal-freq-fill" data-width="75"></div></div><span class="arsenal-freq-label">75%</span></div>
     </div>
 
-    <div class="arsenal-card reveal" style="--ai-color:#20B2AA;">
+    <div class="arsenal-card reveal" style="--ai-color:#ffffff;">
       <div class="arsenal-icon">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Perplexity_AI_Turquoise_on_White.png/960px-Perplexity_AI_Turquoise_on_White.png" alt="Perplexity Logo" style="width:100%; height:100%; object-fit:contain;">
       </div>
@@ -341,7 +364,7 @@
       <div class="arsenal-freq"><div class="arsenal-freq-bar"><div class="arsenal-freq-fill" data-width="80"></div></div><span class="arsenal-freq-label">80%</span></div>
     </div>
 
-    <div class="arsenal-card reveal" style="--ai-color:#10A37F;">
+    <div class="arsenal-card reveal" style="--ai-color:#438272;">
       <div class="arsenal-icon">
         <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT Logo" style="width:100%; height:100%; object-fit:contain;">
       </div>
